@@ -1,118 +1,191 @@
 .task1 .item {
+  position: relative;
+  left: 200px;
+  top: 150px;
 }
 
 .task2 .item {
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
 .task3 .item {
+  position: static;
+  top: 0;
+  left: 0;
 }
 
 .container4 {
+  position: relative;
+  
+   
 }
 
 .task4 {
   width: 1000px;
+  display: flexbox;
+  place-content: center;
+  
 }
+
 .task4 .item {
+  position: sticky;
+  top: 10px;
+  left: 50%;
+  transform: translate(-360%);
 }
 
 .task5 .item1 {
   background-color: red;
+  position: absolute;
+  z-index: 2;
+  margin-top: 25px;
+  margin-left: 25px;
 }
+
 .task5 .item2 {
+  position: absolute;
+  z-index: 1;
+  margin-top: 45px;
+  margin-left: 45px;
 }
+
 .task5 .item3 {
+  position: absolute;
   background-color: green;
+  z-index: 3;
 }
 
 .task6 .item {
+  float: left;
+}
+
+.task6 .item + p {
+  margin-top: 25px;
 }
 
 .task7 .item {
+  float: right;
+}
+
+.task7 .item + p {
+  margin-top: 25px;
 }
 
 .task8 .item1 {
+  float: none;
+  display: inline-block;
 }
 .task8 .item2 {
   height: 120px;
+  float: right;
 }
 
 .task8 p {
+  margin-top: 40px;
 }
 
 .task9 .item1 {
   height: 200px;
+  display: inblock;
+  float: left;
 }
 .task9 .item2 {
+  display: inline;
+  float: right;
 }
 .task9 p {
+  padding-top: 90px;
 }
 
 .task10 .item1 {
+  display: inline-block;
+  float: none;
 }
 .task10 .item2 {
+  display: inline;
+  height: 200px;
+  float: right;
 }
 .task10 p {
+  font-size: 120%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
 }
 
 .task11 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .task12 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .task13 .img-item {
   height: 100%;
   width: 100%;
+ object-fit: fill;
 }
 
 .task14 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: scale-down;
 }
 
 .task15 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: right center;
 }
 
 .task16 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: left top;
 }
 
 .task17 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: center bottom;
 }
 
 .task18 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: 40px 25px;
 }
 
 .task19 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  object-position: center center;
 }
 
 .task20 {
+  user-select: none;
 }
 
 .task21 {
+  user-select: all;
 }
 
 .task22 {
+  caret-color: blue;
 }
 
 html {
+  scroll-behavior: smooth;
 }
